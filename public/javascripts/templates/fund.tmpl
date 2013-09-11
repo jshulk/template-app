@@ -1,0 +1,9 @@
+<% var languages = fund.groupLanguageByDocType();
+	for(var i in languages){%>
+
+	<div><%= i %></div>
+	<% _.each(languages[i], function(lang){%>
+		<div><%= lang.name %></div>
+	<% }, this); %>
+
+<%}%>
